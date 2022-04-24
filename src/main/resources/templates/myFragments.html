@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragments</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+<div th:fragment="header">
+    <h1 class="header"><strong>Produkty</strong></h1>
+</div>
+<div th:fragment="home-page">
+    <div class="button-links">
+        <button style="width: 300px;  text-align: left;" class="btn btn-light" type="submit">
+            <a class="link" href="/">Strona główna</a>
+        </button>
+    </div>
+</div>
+<div th:fragment="categories-links">
+    <div class="button-links">
+        <button style="width: 300px;  text-align: left;" class="btn btn-light" type="submit">
+            <a class="link" href="/lista?kategoria=spozywcze">Artykuły spożywcze</a>
+        </button>
+        <button style="width: 300px; text-align: left;" class="btn btn-light" type="submit">
+            <a class="link" href="/lista?kategoria=domowe">Artykuły gospodarstwa domowego</a>
+        </button>
+        <button style="width: 300px; text-align: left;" class="btn btn-light" type="submit">
+            <a class="link" href="/lista?kategoria=inne">Inne</a>
+        </button>
+    </div>
+
+</div>
+</body>
+</html>
