@@ -14,7 +14,18 @@
 .link {
     text-decoration: none;
     color: black;
+    width: 600px;
 }
-main {
-margin: 5px;
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-header {
+   font-size: 16px;
+}
+
+.submit-button {
+    margin: 10px 0;
 }

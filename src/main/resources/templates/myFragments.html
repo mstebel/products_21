@@ -11,24 +11,18 @@
 </div>
 <div th:fragment="home-page">
     <div class="button-links">
-        <button style="width: 300px;  text-align: left;" class="btn btn-light" type="submit">
-            <a class="link" href="/">Strona główna</a>
-        </button>
+            <a class="link btn btn-light" href="/">Strona główna</a>
     </div>
 </div>
 <div th:fragment="categories-links">
     <div class="button-links">
-        <button style="width: 300px;  text-align: left;" class="btn btn-light" type="submit">
-            <a class="link" href="/lista?kategoria=spozywcze">Artykuły spożywcze</a>
-        </button>
-        <button style="width: 300px; text-align: left;" class="btn btn-light" type="submit">
-            <a class="link" href="/lista?kategoria=domowe">Artykuły gospodarstwa domowego</a>
-        </button>
-        <button style="width: 300px; text-align: left;" class="btn btn-light" type="submit">
-            <a class="link" href="/lista?kategoria=inne">Inne</a>
-        </button>
+            <a class="link btn btn-light" href="/lista?kategoria=spozywcze">Artykuły spożywcze</a>
+            <a class="link btn btn-light" href="/lista?kategoria=domowe">Artykuły gospodarstwa domowego</a>
+            <a class="link btn btn-light" href="/lista?kategoria=inne">Inne</a>
     </div>
-
+</div>
+<div th:fragment="add-product">
+    <a class="link btn btn-warning" href="/form">Dodaj produkt</a>
 </div>
 </body>
 </html>

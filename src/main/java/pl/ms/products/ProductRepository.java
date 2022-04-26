@@ -23,8 +23,8 @@ class ProductRepository {
                 .collect(Collectors.toList());
 
     }
-    public double sumProducts(List<Product> products) {
-        return products.stream()
+    public double sumProductsByCategory(String category) {
+        return filterByCategory(category).stream()
                 .mapToDouble(Product::getPrice)
                 .sum();
     }
